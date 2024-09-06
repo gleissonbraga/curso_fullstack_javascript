@@ -2,6 +2,8 @@ const fs = require("node:fs")
 const path = require("node:path")
 const readline = require("node:readline")
 
+run()
+
 function escapeHtmlSpecialCharacters(text) {
     return text.replace(/[<>&]/g, (match) => {
         switch(match){
@@ -55,4 +57,19 @@ async function userInteraction() {
     escapeHtmlFile(inputPath, outputPath)
 }
 
-userInteraction()
+// userInteraction()
+
+
+function run() {
+    if(process.argv.length >= 4) {
+        escapeHtmlFile(
+            path.resolve(process.argv[2]), 
+            path.resolve(process.argv[3])
+        )
+    } else {
+        console.log("---------------------")
+        console.log("HTML Tag excaper v1.0")
+        console.log("---------------------\n")
+        userInteraction()
+    }
+}
