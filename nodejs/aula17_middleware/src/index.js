@@ -1,17 +1,23 @@
 const express = require('express')
 const middlewareC = require('./middleware/middlewar-c')
+const uploadMiddlewares = require('./middleware/upload-middleware')
 
 // utilizando middleware da forma correta
 // baixando pacote especifico (multer "trabalha com upload de arquivos")
 
-
-
 const app = express()
+
+app.use(express.static('public'))
+
+app.post('/upload', uploadMiddlewares.single('image'), (req, res) => {
+    console.log(req.file, req.body)
+    res.json({message: 'Arquivo salvo com sucesso!'})
+})
 
 
 const PORT = 3000
 app.listen(PORT, () => {
-    console.log(`Server: http://localhost${PORT}`)
+    console.log(`Server: http://localhost:${PORT}`)
 })
 
 
