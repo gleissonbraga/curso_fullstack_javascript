@@ -1,0 +1,16 @@
+{
+  "name": "aula19_autenticacao_com_jwt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --watch src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.0",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
