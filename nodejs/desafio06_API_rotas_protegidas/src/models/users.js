@@ -1,7 +1,7 @@
 const { use } = require("../routes")
 
 const users = [
-    {id: '1', name: "Gleisson", email: 'gleisson@TextDecoderStream.com', password: '123456', role: 'admin'},
+    {id: '1', name: "Gleisson", email: 'gleisson@email.com', password: '123456', role: 'admin'},
 ]
 
 module.exports = {
@@ -28,7 +28,7 @@ module.exports = {
         return newUser
     },
 
-    createUser: (name, email, password) => {
+    createUser: (name, email, password, role = 'standard') => {
         const userAlreadyRegitered = users.find(user => user.email === email)
 
         if(userAlreadyRegitered) return null

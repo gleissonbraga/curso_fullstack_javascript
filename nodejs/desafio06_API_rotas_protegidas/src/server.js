@@ -10,3 +10,7 @@ app.use(router)
 
 const PORT = 3000
 app.listen(PORT, () => { console.log(`Server: http://localhost:${PORT}`) })
+
+
+
+// PAREI NO VIDEO DO EXERCICIO PARTE 2 NO MINUTO 11:40
