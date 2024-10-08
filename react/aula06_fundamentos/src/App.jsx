@@ -1,9 +1,16 @@
+import StatusText from "./components/StatusText"
+import { Subtitle } from "./components/Subtitle"
+import Title from "./components/Title/index"
+
 export default function App(){
-  const tech = "JavaScript"
-  
+
+
+
   return (
     <div>
-      <h1> {tech} is awesome </h1>
+      <Title />
+      <Subtitle />
+      <StatusText />
     </div>
   )
 }
