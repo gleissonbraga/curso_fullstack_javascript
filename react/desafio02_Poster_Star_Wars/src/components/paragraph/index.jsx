@@ -1,3 +1,0 @@
-export default function Paragraph() {
-    return <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae nihil similique hic quibusdam culpa eos tempora eum quia assumenda sequi dolorum deserunt cupiditate ducimus expedita architecto facilis itaque, quod praesentium voluptate? Expedita, totam. Commodi voluptatum amet, enim reprehenderit et pariatur porro fugit rem? Rem quod maxime ducimus, laudantium commodi quidem.</p>
-}

@@ -1,21 +1,17 @@
-import Imagem from './components/image'
-import Title from './components/Title'
-import Paragraph from './components/paragraph'
-import Button from './components/button'
-import styles from './App.module.css'
 
+import Card from "./components/card"
+import swPosterImg from "./assets/starwars.jpg"
+import esbPosterImg from "./assets/esb-poster.webp"
+import rotjPosterImg from "./assets/rotj-poster.webp"
+import Button from "./components/button"
 
 export default function App() {
   return (
-    <div className={styles.container}>
-      <div className={styles.Image}>
-        <Imagem />
-      </div>
-      <div className={styles.text}>
-        <Title />
-        <Paragraph />
-        <Button />
-      </div>
-    </div>
+    <>
+      <Button text="Ir ao Blog" />
+      <Card title="Pôster: Star Wars (1977)" posterImage={swPosterImg} />
+      <Card title="Pôster: Empire Stikes Back (1980)" posterImage={esbPosterImg}/>
+      <Card title="Pôster: Return of the Jedi (1983)" posterImage={rotjPosterImg}/>
+    </>
   )
 }
