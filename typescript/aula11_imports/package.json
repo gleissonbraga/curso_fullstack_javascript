@@ -1,0 +1,20 @@
+{
+  "name": "aula08_criando_tipos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/lodash": "^4.17.13",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
